@@ -23,21 +23,18 @@ class AppDrawer extends StatelessWidget {
   static List<Widget> getDrawerOptions() {
     return [
       DrawerOption(
-        title: 'Images',
-        iconData: Icons.image,
+        title: 'Projects',
+        iconData: Icons.work,
       ),
       DrawerOption(
-        title: 'Reports',
-        iconData: Icons.photo_filter,
+        title: 'Blogs',
+        iconData: Icons.book,
       ),
       DrawerOption(
-        title: 'Incidents',
-        iconData: Icons.message,
+        title: 'About Me',
+        iconData: Icons.info,
       ),
-      DrawerOption(
-        title: 'Settings',
-        iconData: Icons.settings,
-      ),
+      DrawerOption(title: 'Contact', iconData: Icons.phone),
     ];
   }
 }

@@ -8,22 +8,12 @@ class HomeMobilePortrait extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      key: _scaffoldKey,
-      drawer: AppDrawer(),
-      body: Column(
-        children: <Widget>[
-          Padding(
-            padding: const EdgeInsets.all(16),
-            child: IconButton(
-              icon: Icon(Icons.menu, size: 30),
-              onPressed: () {
-                _scaffoldKey.currentState.openDrawer();
-              },
-            ),
-          )
-        ],
-      ),
-    );
+        key: _scaffoldKey,
+        appBar: AppBar(),
+        drawer: AppDrawer(),
+        body: Center(
+          child: Text("sdjfk"),
+        ));
   }
 }
 

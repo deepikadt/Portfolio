@@ -13,19 +13,16 @@ class DrawerOptionMobilePortrait extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.only(left: 25),
-      height: 80,
+      height: 40,
       child: Row(
         children: <Widget>[
-          Icon(
-            iconData,
-            size: 25,
-          ),
+          Icon(iconData, size: 25, color: Colors.white),
           SizedBox(
-            width: 25,
+            width: 20,
           ),
           Text(
             title,
-            style: TextStyle(fontSize: 21),
+            style: TextStyle(fontSize: 21, color: Colors.white),
           )
         ],
       ),
@@ -42,7 +39,7 @@ class DrawerOptionMobileLandscape extends StatelessWidget {
     return Container(
       height: 70,
       alignment: Alignment.center,
-      child: Icon(iconData),
+      child: Icon(iconData, size: 25, color: Colors.white),
     );
   }
 }
