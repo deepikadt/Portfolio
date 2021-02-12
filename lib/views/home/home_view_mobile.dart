@@ -9,10 +9,14 @@ class HomeMobilePortrait extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         key: _scaffoldKey,
-        appBar: AppBar(),
         drawer: AppDrawer(),
-        body: Center(
-          child: Text("sdjfk"),
+        body: SafeArea(
+          child: IconButton(
+            icon: Icon(Icons.view_headline_outlined),
+            onPressed: () {
+              _scaffoldKey.currentState.openDrawer();
+            },
+          ),
         ));
   }
 }
